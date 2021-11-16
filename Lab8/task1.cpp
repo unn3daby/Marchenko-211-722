@@ -7,6 +7,11 @@ int main() {
 	cout << "byte = ";
 	cin >> a;
 	b = a / 1024;
-	cout << "kylobyte = " << b;
+	if (a % 1024 == 0){
+    cout << "kylobyte = " << b;
+  }
+  else{
+    cout << "kylobyte = " << b+1;
+  }
 	return 0;
 }
