@@ -7,43 +7,43 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int a, a1, N, K, d, b, c, R1, R2, itog;
-	cout << "Введите номер задания: ";
+	cout << "Vvedite nomer zadaniya: ";
 	cin >> a;
 	switch (a) 
 	{
 	case 1:
-		cout << "Введите N: ";
+		cout << "Vvedite N: ";
 		cin >> N;
-		cout << N % 60 << " - количество секунд, прошедших с начала последней минуты";
+		cout << N % 60 << " - kol-vo secund, proshedshih s nachala posledney secundy";
 		break;
 	case 2:
-		cout << "Введите номер дня: ";
+		cout << "Vvedite nomer dnyaЛ™: ";
 		cin >> K;
-		cout << (K % 7)  << " - номер дня недели";
+		cout << (K % 7)  << " - nomer dnya nedeli";
 		break;
 	case 3:
-		cout << "Введите номер дня: ";
+		cout << "vvedite nomer dnya: ";
 		cin >> K;
-		cout << "Введите каким номером недели было 1 января: ";
+		cout << "Kakoi nomer dnya bil 1 january: ";
 		cin >> N;
-		cout << (K + N - 1) % 7 << " - День недели";
+		cout << (K + N - 1) % 7 << " - den' nedeli";
 		break;
 	case 4:
-		cout << "Введите А: ";
+		cout << "Vvedite A: ";
 		cin >> a1;
-		cout << "Введите B: ";
+		cout << "Vvedite B: ";
 		cin >> b; 
-		cout << "Введите C: ";
+		cout << "Vvedite C: ";
 		cin >> c;
 		R1 = (a1 * b);
 		R2 = pow(c, 2);
 		itog = R1 / R2;
-		cout << "Количество квадратов, размещенных на прямоугольнике: " << itog << endl << "Площадь незанятой части прямоугольника: " << R1 - itog * R2;
+		cout << "Kol-vo kvadratov, razmesh'ennyh na territorii: " << itog << endl << "Ploshad' nezanyatogo postranstva: " << R1 - itog * R2;
 		break;
 	case 5:
-		cout << "Введите год: ";
+		cout << "Vvedite god: ";
 		cin >> a1;
-		cout << "Соответствующий ему номер столетия: " << (a1-1) / 100 + 1;
+		cout << "Sootovetstvushii nomer stolitiya: " << (a1-1) / 100 + 1;
 		break;
 
 	}
